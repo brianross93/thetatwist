@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, cite it with the metadata in this file."
+title: "Theta Twist"
+type: software
+version: 0.1.0
+authors:
+  - family-names: "Ross"
+    given-names: "Brian L."
+    affiliation: "University of Oklahoma"
+repository-code: "https://github.com/brianross93/thetatwist"
+license: MIT
+abstract: >-
+  An exact rational-arithmetic check of a theta-twist correction for the
+  cyclic construction in Section 12 of Eyal Markman's Secant sheaves and Weil
+  classes on abelian varieties.
+keywords:
+  - "abelian varieties"
+  - "algebraic geometry"
+  - "Chern character"
+  - "exact arithmetic"
+  - "Hodge theory"
+  - "secant sheaves"

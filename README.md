@@ -141,6 +141,11 @@ PYTHONPATH=src python3 -m thetatwist --d 3 --write-results results
 [results/d3_certificate.json](results/d3_certificate.json) contains the
 generated machine result.
 
+## Citation and license
+
+[CITATION.cff](CITATION.cff) contains the citation metadata. The repository
+uses the [MIT License](LICENSE).
+
 ## Scope
 
 This repository verifies a Chern-character identity and its immediate
