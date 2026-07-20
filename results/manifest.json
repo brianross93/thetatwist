@@ -1,0 +1,10 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6116,
+      "path": "d3_certificate.json",
+      "sha256": "b7116337f96e0ec6c0d7e1062c7dc5f6c048c00c36b97a52d07b07cfef6e733c"
+    }
+  ],
+  "schema_version": "thetatwist-certificate-1"
+}

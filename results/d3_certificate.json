@@ -1,0 +1,274 @@
+{
+  "claim_boundary": "Chern-character and Hodge-side certificate only; no semiregularity, Atiyah/evaluation-map, group-action, or Hodge-conjecture claim.",
+  "corrected": {
+    "coefficients": [
+      "1",
+      "3",
+      "-3/2",
+      "-3/2",
+      "3/8"
+    ],
+    "hodge_contraction": {
+      "block": [
+        [
+          "1",
+          "6",
+          "3"
+        ],
+        [
+          "3",
+          "-6",
+          "9"
+        ],
+        [
+          "3",
+          "18",
+          "9"
+        ]
+      ],
+      "block_rank": 2,
+      "full_kernel_dimension": 16,
+      "full_rank": 12,
+      "mixed_kernel_vector_A_Bantisym_C": [
+        -3,
+        0,
+        1
+      ]
+    },
+    "normalized": [
+      "1",
+      "0",
+      "-6",
+      "12",
+      "-12"
+    ],
+    "secant_membership": {
+      "alpha_coefficient": "1",
+      "beta_coefficient": "3",
+      "member": true,
+      "residual": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "self_euler": 288
+  },
+  "d": 3,
+  "declared_natural_repair_sweep": {
+    "candidates": [
+      {
+        "coefficients": [
+          "1",
+          "3",
+          "-3/2",
+          "-3/2",
+          "3/8"
+        ],
+        "id": "nondual_plus_2",
+        "operation": "tensor by O_X(2 Theta)",
+        "secant_membership": {
+          "alpha_coefficient": "1",
+          "beta_coefficient": "3",
+          "member": true,
+          "residual": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "self_euler": 288
+      },
+      {
+        "coefficients": [
+          "1",
+          "-3",
+          "-3/2",
+          "51/2",
+          "-573/8"
+        ],
+        "id": "nondual_minus_4",
+        "operation": "tensor by O_X(-4 Theta)",
+        "secant_membership": {
+          "alpha_coefficient": "1",
+          "beta_coefficient": "-3",
+          "member": false,
+          "residual": [
+            "0",
+            "0",
+            "0",
+            "24",
+            "-72"
+          ]
+        },
+        "self_euler": 288
+      },
+      {
+        "coefficients": [
+          "1",
+          "-3",
+          "-3/2",
+          "3/2",
+          "3/8"
+        ],
+        "id": "dual_minus_2",
+        "operation": "dualize, then tensor by O_X(-2 Theta)",
+        "secant_membership": {
+          "alpha_coefficient": "1",
+          "beta_coefficient": "-3",
+          "member": true,
+          "residual": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "self_euler": 288
+      },
+      {
+        "coefficients": [
+          "1",
+          "3",
+          "-3/2",
+          "-51/2",
+          "-573/8"
+        ],
+        "id": "dual_plus_4",
+        "operation": "dualize, then tensor by O_X(4 Theta)",
+        "secant_membership": {
+          "alpha_coefficient": "1",
+          "beta_coefficient": "3",
+          "member": false,
+          "residual": [
+            "0",
+            "0",
+            "0",
+            "-24",
+            "-72"
+          ]
+        },
+        "self_euler": 288
+      }
+    ],
+    "cohomological_no_ops": {
+      "Pic0_tensor": "Chern character one",
+      "Todd_Mukai": "td(X)=1 for an abelian variety",
+      "differential_sign": "chain-isomorphic presentation; same K-class",
+      "translation": "identity on rational cohomology"
+    },
+    "cone_reversal": "negates rank and therefore cannot give the rank-one target",
+    "exact_alpha_plus_beta_autoequivalence_no_go": {
+      "printed_euler": 288,
+      "reason": "derived autoequivalences preserve the Euler pairing",
+      "target_euler": 96
+    },
+    "explicit_scope": "theta twists, dualization, shifts/cone reversal, translation, Pic0 tensor, Todd/Mukai convention, multiplication pullback, parameter relabeling, component count, and point-normalization count",
+    "integral_theta_twist_reduction": "degree two leaves k=2,-4; only k=2 passes degrees three and four",
+    "multiplication_pullback_no_go": "after c1 normalization, degree two would require (d+9)m^4=d+1, impossible for integer m and d>=3",
+    "parameter_relabel_no_go": "degrees two and three have no admissible simultaneous d-relabel solution",
+    "point_normalization": "changes degree four only"
+  },
+  "normalized_character_preserved": true,
+  "older_alpha_plus_beta_comparator": {
+    "coefficients": [
+      "1",
+      "1",
+      "-3/2",
+      "-1/2",
+      "3/8"
+    ],
+    "self_euler": 96,
+    "source": "arXiv:2502.03415v2, Example 8.2.3"
+  },
+  "printed": {
+    "coefficients": [
+      "1",
+      "1",
+      "-11/2",
+      "37/6",
+      "-71/24"
+    ],
+    "hodge_contraction": {
+      "block": [
+        [
+          "1",
+          "2",
+          "11"
+        ],
+        [
+          "1",
+          "-22",
+          "-37"
+        ],
+        [
+          "11",
+          "-74",
+          "-71"
+        ]
+      ],
+      "block_rank": 2,
+      "full_kernel_dimension": 16,
+      "full_rank": 12,
+      "mixed_kernel_vector_A_Bantisym_C": [
+        -7,
+        -2,
+        1
+      ]
+    },
+    "normalized": [
+      "1",
+      "0",
+      "-6",
+      "12",
+      "-12"
+    ],
+    "secant_membership": {
+      "alpha_coefficient": "1",
+      "beta_coefficient": "1",
+      "member": false,
+      "residual": [
+        "0",
+        "0",
+        "-4",
+        "20/3",
+        "-10/3"
+      ]
+    },
+    "self_euler": 288
+  },
+  "repair_certificate": {
+    "alpha_plus_3beta": [
+      "1",
+      "3",
+      "-3/2",
+      "-3/2",
+      "3/8"
+    ],
+    "coefficients_close": true,
+    "corrected": [
+      "1",
+      "3",
+      "-3/2",
+      "-3/2",
+      "3/8"
+    ],
+    "counts_close": true,
+    "degree2_constraint": "n=(d+t^2)/2",
+    "degree3_factorization": "(t-3)(t^2+d)=0",
+    "printed_n": 6,
+    "printed_r": 60,
+    "proposed_repair": "O_X(Theta) -> O_X(3 Theta)",
+    "required_n": 6,
+    "required_r": 60,
+    "same_nondual_operation": "tensor by O_X(2 Theta)",
+    "unique_positive_d_real_integral_twist": 3
+  },
+  "schema_version": "thetatwist-certificate-1",
+  "source": "arXiv:2509.23403v2, Section 12, pages 21-22"
+}
