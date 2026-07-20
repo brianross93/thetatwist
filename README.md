@@ -26,9 +26,9 @@ $$
 which lies exactly in the claimed plane
 
 $$
-\mathrm{span}\left\{
+\mathrm{span}\{
 e^{\sqrt{-d}\Theta},e^{-\sqrt{-d}\Theta}
-\right\}.
+\}.
 $$
 
 This is the unique integral theta-twist correction within the stated cyclic
