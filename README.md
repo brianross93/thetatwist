@@ -87,7 +87,7 @@ The correction does not change this normalized characteristic class:
 
 $$
 \kappa(E)=\mathrm{ch}(E)
-\exp\!\left(-c_1(E)/\mathrm{rank}(E)\right).
+\exp\left(-c_1(E)/\mathrm{rank}(E)\right).
 $$
 
 The Hodge-side contraction has the same rank before and after the correction.
