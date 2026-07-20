@@ -86,6 +86,40 @@ class DerivedContractTests(unittest.TestCase):
         self.assertIn("Do not reduce", handoff["symmetry_boundary"])
         self.assertNotIn("W_2", json.dumps(handoff))
 
+    def test_parameter_incidence_closure_is_named_and_exact(self) -> None:
+        closure = evaluation_handoff(3)["parameter_incidence_closure"]
+        self.assertEqual(closure["name"], "parameter-incidence closure check")
+        self.assertEqual(closure["symbolic_schema_status"], "passed")
+        self.assertEqual(closure["instantiated_fiber_status"], "not yet computed")
+        self.assertEqual(closure["component_parameter"], 6)
+        self.assertEqual(closure["realized_surface_count"], 6)
+        self.assertEqual(closure["normalization_parameter"], 60)
+        self.assertEqual(closure["realized_normalized_node_count"], 60)
+        self.assertEqual(closure["total_isolated_nodes"], 72)
+        self.assertEqual(closure["realized_residual_node_count"], 12)
+        self.assertEqual(closure["strata"]["adjacent_triple_theta_curves_T_i"], 6)
+        self.assertEqual(closure["strata"]["consecutive_four_theta_schemes_Q_i"], 6)
+        self.assertEqual(closure["strata"]["isolated_four_theta_schemes"], 3)
+
+    def test_both_mixed_outcomes_are_declared(self) -> None:
+        outcomes = evaluation_handoff(3)["preregistered_outcomes"]
+        self.assertIn("all_six_zero", outcomes)
+        self.assertIn("any_one_nonzero", outcomes)
+        self.assertIn("does not assert surjectivity", outcomes["all_six_zero"])
+        self.assertIn("recorded node choice", outcomes["any_one_nonzero"])
+        self.assertIn("No mathematical verdict", outcomes["integrity_failure"])
+
+    def test_execution_strategy_keeps_level_and_symmetry_boundaries(self) -> None:
+        handoff = evaluation_handoff(3)
+        strategy = handoff["execution_strategy"]
+        symmetry = handoff["symmetry_analysis"]
+        self.assertIn("not automatically a level-3", strategy["order_six_translation"])
+        self.assertIn("level-6", strategy["order_six_translation"])
+        self.assertIn("does not by itself", strategy["finite_field_selection"])
+        self.assertTrue(any("6g=0" in check for check in strategy["fiber_checks"]))
+        self.assertIn("do not merge", symmetry["translation_use"])
+        self.assertIn("nontrivial linear action", symmetry["valid_reduction"])
+
     def test_manifest_closes(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             paths = write_evaluation_handoff(Path(directory), 3)

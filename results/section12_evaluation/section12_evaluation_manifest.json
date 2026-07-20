@@ -1,10 +1,10 @@
 {
   "artifacts": [
     {
-      "bytes": 5856,
+      "bytes": 10077,
       "path": "d3_section12_evaluation_handoff.json",
-      "sha256": "90eed7ec7ccafe501c6d2c01220e7cc646792ae94b889f66836bcbae2cb44250"
+      "sha256": "c7660c35a7af5cd2f7ec2d28b47b603b9e767574687e34e33a5fc7403e57d39d"
     }
   ],
-  "schema_version": "thetatwist-section12-evaluation-handoff-1"
+  "schema_version": "thetatwist-section12-evaluation-handoff-2"
 }

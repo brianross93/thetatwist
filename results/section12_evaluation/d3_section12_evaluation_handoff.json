@@ -66,6 +66,23 @@
     ]
   },
   "d": 3,
+  "execution_strategy": {
+    "characteristic_zero_provenance": "Reduce one fixed integral model at independent good primes; reconstruct from two primes and verify at a third.",
+    "coordinate_model": "Use exact theta-coordinate multiplication, restriction, point-evaluation, and normalization matrices.",
+    "fiber_checks": [
+      "good reduction",
+      "required rational theta data",
+      "6g=0, 2g nonzero, and 3g nonzero",
+      "the expected 72-node incidence ledger",
+      "Frobenius stability of the selected residual node scheme"
+    ],
+    "finite_field_selection": "p congruent to 1 modulo 12 supplies useful roots of unity but does not by itself make the torsion or theta structure rational.",
+    "global_model": "Do not eliminate the 3Theta embedding in P^80; h0(3Theta)=81.",
+    "macaulay2_role": "Manage supplied finite matrices, complexes, Hom complexes, Ext reduction, and syzygy certificates rather than global P^80 elimination.",
+    "optional_cyclic_node_choice": "If node-level cyclic symmetry is used, choose R_keep as two full free six-element orbits and record them.",
+    "order_six_translation": "An exact order-six translation is not automatically a level-3 clock action because the theta group of 3Theta covers X[3]. Use direct_sum_i H0(t_(ig)^*3Theta), with translation permuting the six summands, or use a compatible level-6 theta structure. Neither construction automatically linearizes E.",
+    "shared_totalization": "Build and cache one total complex and one Atiyah cocycle; contract all six witnesses against that common data."
+  },
   "hodge_kernel": {
     "dimension": 16,
     "mixed_dimension": 6,
@@ -251,8 +268,47 @@
     "compatible bases for HT^2 and Ext^2"
   ],
   "object": "E=[O_X -> nu_*O_Ztilde] tensor O_X(3 Theta)",
-  "schema_version": "thetatwist-section12-evaluation-handoff-1",
+  "parameter_incidence_closure": {
+    "character_realization": "Cech-Koszul character is alpha+3beta",
+    "component_equation": "n=(d+9)/2",
+    "component_parameter": 6,
+    "instantiated_fiber_status": "not yet computed",
+    "interpretation": "The corrected character, the printed n and r values, and the exact incidence schema agree. This is a separate realization check, not a claim that the printed inputs are logically independent or that an explicit finite-field fiber is already constructed.",
+    "name": "parameter-incidence closure check",
+    "normalization_equation": "r=(d+9)(2d-1)",
+    "normalization_parameter": 60,
+    "realized_normalized_node_count": 60,
+    "realized_residual_node_count": 12,
+    "realized_surface_count": 6,
+    "residual_equation": "total-r=(d+9)(d-2)",
+    "strata": {
+      "adjacent_triple_theta_curves_T_i": 6,
+      "consecutive_four_theta_schemes_Q_i": 6,
+      "isolated_four_theta_schemes": 3,
+      "length_each_Q_i": 24,
+      "length_each_isolated_scheme": 24,
+      "surfaces_Z_i": 6
+    },
+    "symbolic_schema_status": "passed",
+    "total_isolated_nodes": 72
+  },
+  "preregistered_outcomes": {
+    "all_six_zero": "For this corrected object and recorded node choice, the ten geometric vanishings and six computed vanishings give equality of the evaluation and Chern-contraction kernels. This proves the weaker criterion in Question 11.4 for this object; it does not assert surjectivity.",
+    "any_one_nonzero": "For this corrected object and recorded node choice, a nonzero mixed evaluation proves failure of the weaker criterion. It does not cover other residual-node choices unless independence from that choice is also proved.",
+    "certificate_forms": {
+      "nonzero": "a dual cocycle ell with ell*D_End=0 and ell(z_ij) nonzero",
+      "zero": "an exact End(P) cochain h with D_End(h)=z_ij"
+    },
+    "field_scope": "An all-zero finite-field result is a result over that field. A complex conclusion requires the fixed-model lift or exact reconstruction.",
+    "integrity_failure": "No mathematical verdict: the run did not instantiate the declared object."
+  },
+  "schema_version": "thetatwist-section12-evaluation-handoff-2",
   "scope": "corrected Section 12 alpha+3beta object only",
   "source": "arXiv:2509.23403v2, Section 12 and Question 11.4",
+  "symmetry_analysis": {
+    "inversion_use": "Inversion fixes the two-factor mixed classes and does not merge the six mixed witnesses.",
+    "translation_use": "Use cyclic translations to reuse component and node assembly. Translations act trivially on the HT^2 source and do not merge the six mixed witnesses.",
+    "valid_reduction": "A reduction requires a proved automorphism with nontrivial linear action on H^1 and a compatible chain-level action. Compute its actual orbits on the six mixed witnesses."
+  },
   "symmetry_boundary": "Do not reduce the six mixed checks to one representative unless a chain-level action on this fixed divisor and node configuration is proved."
 }

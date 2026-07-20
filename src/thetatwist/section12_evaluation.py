@@ -19,7 +19,7 @@ from typing import Any, Iterable
 from .core import Character, corrected_character, exponential, product
 
 
-SCHEMA_VERSION = "thetatwist-section12-evaluation-handoff-1"
+SCHEMA_VERSION = "thetatwist-section12-evaluation-handoff-2"
 
 
 def _check_d(d: int) -> int:
@@ -269,6 +269,38 @@ def evaluation_handoff(d: int = 3) -> dict[str, Any]:
         "d": d,
         "object": "E=[O_X -> nu_*O_Ztilde] tensor O_X(3 Theta)",
         "incidence": incidence,
+        "parameter_incidence_closure": {
+            "name": "parameter-incidence closure check",
+            "symbolic_schema_status": "passed",
+            "instantiated_fiber_status": "not yet computed",
+            "component_equation": "n=(d+9)/2",
+            "component_parameter": incidence["component_count"],
+            "realized_surface_count": len(incidence["components"]),
+            "normalization_equation": "r=(d+9)(2d-1)",
+            "normalization_parameter": incidence["normalized_nodes"],
+            "realized_normalized_node_count": incidence["normalized_nodes"],
+            "total_isolated_nodes": incidence["total_isolated_nodes"],
+            "residual_equation": "total-r=(d+9)(d-2)",
+            "realized_residual_node_count": incidence[
+                "unnormalized_isolated_nodes"
+            ],
+            "strata": {
+                "surfaces_Z_i": incidence["component_count"],
+                "adjacent_triple_theta_curves_T_i": incidence["adjacent_pairs"],
+                "consecutive_four_theta_schemes_Q_i": incidence["triple_points"],
+                "length_each_Q_i": incidence["point_set_length"],
+                "isolated_four_theta_schemes": incidence["isolated_pairs"],
+                "length_each_isolated_scheme": incidence["point_set_length"],
+            },
+            "character_realization": "Cech-Koszul character is alpha+3beta",
+            "interpretation": (
+                "The corrected character, the printed n and r values, and the "
+                "exact incidence schema agree. This is a separate realization "
+                "check, not a claim that the printed inputs are logically "
+                "independent or that an explicit finite-field fiber is already "
+                "constructed."
+            ),
+        },
         "cech_contract": cech_contract(d),
         "hodge_kernel": {
             "dimension": 16,
@@ -291,10 +323,100 @@ def evaluation_handoff(d: int = 3) -> dict[str, Any]:
                 "weaker criterion in Question 11.4."
             ),
         },
+        "preregistered_outcomes": {
+            "all_six_zero": (
+                "For this corrected object and recorded node choice, the ten "
+                "geometric vanishings and six computed vanishings give equality "
+                "of the evaluation and Chern-contraction kernels. This proves "
+                "the weaker criterion in Question 11.4 for this object; it does "
+                "not assert surjectivity."
+            ),
+            "any_one_nonzero": (
+                "For this corrected object and recorded node choice, a nonzero "
+                "mixed evaluation proves failure of the weaker criterion. It "
+                "does not cover other residual-node choices unless independence "
+                "from that choice is also proved."
+            ),
+            "certificate_forms": {
+                "zero": "an exact End(P) cochain h with D_End(h)=z_ij",
+                "nonzero": (
+                    "a dual cocycle ell with ell*D_End=0 and ell(z_ij) nonzero"
+                ),
+            },
+            "integrity_failure": (
+                "No mathematical verdict: the run did not instantiate the "
+                "declared object."
+            ),
+            "field_scope": (
+                "An all-zero finite-field result is a result over that field. "
+                "A complex conclusion requires the fixed-model lift or exact "
+                "reconstruction."
+            ),
+        },
         "symmetry_boundary": (
             "Do not reduce the six mixed checks to one representative unless a "
             "chain-level action on this fixed divisor and node configuration is proved."
         ),
+        "symmetry_analysis": {
+            "translation_use": (
+                "Use cyclic translations to reuse component and node assembly. "
+                "Translations act trivially on the HT^2 source and do not merge "
+                "the six mixed witnesses."
+            ),
+            "inversion_use": (
+                "Inversion fixes the two-factor mixed classes and does not merge "
+                "the six mixed witnesses."
+            ),
+            "valid_reduction": (
+                "A reduction requires a proved automorphism with nontrivial "
+                "linear action on H^1 and a compatible chain-level action. "
+                "Compute its actual orbits on the six mixed witnesses."
+            ),
+        },
+        "execution_strategy": {
+            "global_model": (
+                "Do not eliminate the 3Theta embedding in P^80; h0(3Theta)=81."
+            ),
+            "coordinate_model": (
+                "Use exact theta-coordinate multiplication, restriction, "
+                "point-evaluation, and normalization matrices."
+            ),
+            "order_six_translation": (
+                "An exact order-six translation is not automatically a level-3 "
+                "clock action because the theta group of 3Theta covers X[3]. "
+                "Use direct_sum_i H0(t_(ig)^*3Theta), with translation permuting "
+                "the six summands, or use a compatible level-6 theta structure. "
+                "Neither construction automatically linearizes E."
+            ),
+            "finite_field_selection": (
+                "p congruent to 1 modulo 12 supplies useful roots of unity but "
+                "does not by itself make the torsion or theta structure rational."
+            ),
+            "fiber_checks": [
+                "good reduction",
+                "required rational theta data",
+                "6g=0, 2g nonzero, and 3g nonzero",
+                "the expected 72-node incidence ledger",
+                "Frobenius stability of the selected residual node scheme",
+            ],
+            "optional_cyclic_node_choice": (
+                "If node-level cyclic symmetry is used, choose R_keep as two "
+                "full free six-element orbits and record them."
+            ),
+            "characteristic_zero_provenance": (
+                "Reduce one fixed integral model at independent good primes; "
+                "reconstruct from two primes and verify at a third."
+            ),
+            "shared_totalization": (
+                "Build and cache one total complex and one Atiyah cocycle; "
+                "contract all six witnesses against that common data."
+            ),
+            "macaulay2_role": (
+                "Manage supplied finite matrices, complexes, Hom complexes, "
+                "Ext reduction, and syzygy certificates rather than global "
+                "P^80 elimination."
+            ),
+        },
         "matrix_inputs": [
             "equations or transition data for the six translated theta divisors",
             "the Cech restriction maps for all listed intersections",
