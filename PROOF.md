@@ -7,20 +7,20 @@ $x=[\Theta]$, and normalize $\int_Xx^4=24$. For a transverse
 intersection of $k$ theta translates,
 
 $$
-\operatorname{ch}(O_k)=(1-e^{-x})^k.
+\mathrm{ch}(O_k)=(1-e^{-x})^k.
 $$
 
 For $n$ cyclically indexed surfaces $Z_i=D_i\cap D_{i+1}$,
 inclusion-exclusion gives
 
 $$
-\operatorname{ch}(O_Z)
-=n\operatorname{ch}(O_2)-n\operatorname{ch}(O_3)
--\frac{n(n-5)}2\operatorname{ch}(O_4).
+\mathrm{ch}(O_Z)
+=n\mathrm{ch}(O_2)-n\mathrm{ch}(O_3)
+-\frac{n(n-5)}2\mathrm{ch}(O_4).
 $$
 
 Partially normalizing $r$ isolated ordinary nodes adds $r[pt]=rx^4/24$
-to $\operatorname{ch}(\nu_*O_{\widetilde Z})$.
+to $\mathrm{ch}(\nu_*O_{\widetilde Z})$.
 
 ## 2. Keep the final twist variable
 
@@ -36,7 +36,7 @@ Exact expansion through degree four gives
 
 $$
 \begin{aligned}
-\operatorname{ch}(K_{n,r,t})={}&1+tx
+\mathrm{ch}(K_{n,r,t})={}&1+tx
 +\left(\frac{t^2}{2}-n\right)x^2\\
 &+\left(\frac{t^3}{6}-nt+2n\right)x^3\\
 &+\left(
@@ -136,10 +136,10 @@ $$
 
 That is not achieved by an exact derived autoequivalence of $D^b(X)$. On an
 abelian fourfold,
-$\operatorname{td}(X)=1$, and
+$\mathrm{td}(X)=1$, and
 
 $$
-\chi(E,E)=\int_X\operatorname{ch}(E)^\vee\operatorname{ch}(E).
+\chi(E,E)=\int_X\mathrm{ch}(E)^\vee\mathrm{ch}(E).
 $$
 
 The two Euler pairings are $8d(d+9)$ and $8d(d+1)$, respectively.
@@ -173,5 +173,5 @@ $$
 
 The latter is the expected secant-plane witness. This is only the Hodge-side
 contraction. The Section 12 theta-cycle still requires its own
-$HT^2\to\operatorname{Ext}^2$ Atiyah/evaluation computation; it cannot
+$HT^2\to\mathrm{Ext}^2$ Atiyah/evaluation computation; it cannot
 borrow that map from the geometrically different $W_2$ construction.
