@@ -141,6 +141,11 @@ PYTHONPATH=src python3 -m thetatwist --d 3 --write-results results
 [results/d3_certificate.json](results/d3_certificate.json) contains the
 generated machine result.
 
+The experimental continuation is in
+[EVALUATION_CAMPAIGN.md](EVALUATION_CAMPAIGN.md). It uses only the corrected
+Section 12 object. It gives the exact theta-incidence complex and reduces the
+open Atiyah calculation from 16 kernel directions to six mixed directions.
+
 ## Citation and license
 
 [CITATION.cff](CITATION.cff) contains the citation metadata. The repository

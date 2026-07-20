@@ -1,0 +1,258 @@
+{
+  "cech_contract": {
+    "character_matches_alpha_plus_3beta": true,
+    "corrected_object": "E=[O_X -> nu_*O_Ztilde] tensor O_X(3 Theta)",
+    "normalized_incidence_resolution": {
+      "N0": {
+        "summands": 6,
+        "type": "O_(D_i intersection D_(i+1))"
+      },
+      "N1": {
+        "adjacent_curve_summands": 6,
+        "consecutive_four_theta_summands": 6,
+        "residual_isolated_node_length": 12,
+        "type": "adjacent curves plus the six four-theta Q_i schemes plus the selected residual node scheme R_keep"
+      },
+      "N2": {
+        "consecutive_four_theta_summands": 6,
+        "type": "Cech triple corrections on the Q_i schemes"
+      },
+      "selection_required": "R_keep is the reduced residual node scheme. Its complement in the isolated nodes is normalized.",
+      "sequence": "0 -> nu_*O_Ztilde -> N0 -> N1 -> N2 -> 0"
+    },
+    "partial_normalization": {
+      "length_Q_R": 60,
+      "required_data": "selected reduced isolated nodes and the extension/lift maps; the K-class alone does not determine the derived object",
+      "sequence": "0 -> O_Z -> nu_*O_Ztilde -> Q_R -> 0"
+    },
+    "union_augmentation": "0 -> O_Z -> C0 -> C1 -> C2 -> 0",
+    "union_terms": [
+      {
+        "id": "C0",
+        "koszul_codimension": 2,
+        "summands": 6,
+        "type": "O_(D_i intersection D_(i+1))"
+      },
+      {
+        "id": "C1_curves",
+        "koszul_codimension": 3,
+        "summands": 6,
+        "type": "O_(three theta divisors)"
+      },
+      {
+        "id": "C1_points",
+        "koszul_codimension": 4,
+        "summands": 9,
+        "type": "O_(four theta divisors), length 24 per summand"
+      },
+      {
+        "id": "C2_points",
+        "koszul_codimension": 4,
+        "summands": 6,
+        "type": "O_(four theta divisors), Cech triple correction"
+      }
+    ]
+  },
+  "claim_boundary": "The incidence and 10+6 reduction are exact. This handoff does not supply the six mixed Ext^2 values and does not prove the Hodge conjecture.",
+  "completion_test": {
+    "consequence": "Together with ker(ev_E) contained in ker(contraction by ch(E)), these six equalities give equality of the two kernels and the weaker criterion in Question 11.4.",
+    "required_equalities": [
+      "ev_E(C_12-3A_12)=0",
+      "ev_E(C_13-3A_13)=0",
+      "ev_E(C_14-3A_14)=0",
+      "ev_E(C_23-3A_23)=0",
+      "ev_E(C_24-3A_24)=0",
+      "ev_E(C_34-3A_34)=0"
+    ]
+  },
+  "d": 3,
+  "hodge_kernel": {
+    "dimension": 16,
+    "mixed_dimension": 6,
+    "mixed_status": "open: compute each image in Ext^2(E,E)",
+    "mixed_witnesses": [
+      "C_12-3A_12",
+      "C_13-3A_13",
+      "C_14-3A_14",
+      "C_23-3A_23",
+      "C_24-3A_24",
+      "C_34-3A_34"
+    ],
+    "ordinary_polarized_dimension": 10,
+    "ordinary_status": "closed geometrically: extend the polarized abelian scheme, translation sections, relative theta divisors, selected etale node sections, and the relative partial normalization",
+    "ordinary_witnesses": [
+      "B_11",
+      "B_22",
+      "B_33",
+      "B_44",
+      "B_12+B_21",
+      "B_13+B_31",
+      "B_14+B_41",
+      "B_23+B_32",
+      "B_24+B_42",
+      "B_34+B_43"
+    ]
+  },
+  "incidence": {
+    "adjacent_component_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "adjacent_pairs": 6,
+    "component_count": 6,
+    "components": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "consecutive_triple_intersections": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "d": 3,
+    "isolated_double_point_pairs": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "isolated_pairs": 3,
+    "normalized_nodes": 60,
+    "point_intersection_pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "point_pairs": 9,
+    "point_set_length": 24,
+    "selection_boundary": "The source specifies only the total number of normalized isolated nodes. The evaluation calculation must supply the selected nodes and the normalization extension maps.",
+    "total_isolated_nodes": 72,
+    "triple_points": 6,
+    "unnormalized_isolated_nodes": 12
+  },
+  "matrix_inputs": [
+    "equations or transition data for the six translated theta divisors",
+    "the Cech restriction maps for all listed intersections",
+    "the selected normalized nodes and normalization extension maps",
+    "a locally free totalization of [O_X -> nu_*O_Ztilde](3Theta)",
+    "the principal-parts Atiyah cocycle of that totalization",
+    "compatible bases for HT^2 and Ext^2"
+  ],
+  "object": "E=[O_X -> nu_*O_Ztilde] tensor O_X(3 Theta)",
+  "schema_version": "thetatwist-section12-evaluation-handoff-1",
+  "scope": "corrected Section 12 alpha+3beta object only",
+  "source": "arXiv:2509.23403v2, Section 12 and Question 11.4",
+  "symmetry_boundary": "Do not reduce the six mixed checks to one representative unless a chain-level action on this fixed divisor and node configuration is proved."
+}
