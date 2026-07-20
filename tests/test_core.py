@@ -78,7 +78,7 @@ class ThetaTwistTests(unittest.TestCase):
             {
                 "printed_euler": 288,
                 "target_euler": 96,
-                "reason": "derived autoequivalences preserve the Euler pairing",
+                "reason": "derived autoequivalences keep the Euler pairing unchanged",
             },
         )
 
@@ -93,7 +93,7 @@ class ThetaTwistTests(unittest.TestCase):
     def test_certificate_has_no_inferred_group_action(self) -> None:
         result = certificate(3)
         self.assertTrue(result["normalized_character_preserved"])
-        self.assertIn("group-action", result["claim_boundary"])
+        self.assertIn("group action", result["claim_boundary"])
         self.assertNotIn("effective_group_order", json.dumps(result))
 
     def test_hash_manifest_closes(self) -> None:

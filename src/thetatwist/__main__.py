@@ -8,12 +8,12 @@ from .core import certificate, write_results
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run the exact theta-twist audit")
+    parser = argparse.ArgumentParser(description="Calculate the exact theta-twist correction")
     parser.add_argument("--d", type=int, default=3, help="odd integer d >= 3")
     parser.add_argument(
         "--write-results",
         type=Path,
-        help="write the certificate and SHA-256 manifest to this directory",
+        help="write the result and its SHA-256 manifest to this directory",
     )
     args = parser.parse_args()
     result = certificate(args.d)

@@ -1,4 +1,4 @@
-"""Exact theta-character arithmetic for the Section 12 repair."""
+"""Exact theta-character calculation for the Section 12 correction."""
 
 from .core import (
     certificate,
