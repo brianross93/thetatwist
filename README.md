@@ -26,9 +26,9 @@ $$
 which lies exactly in the claimed plane
 
 $$
-\operatorname{span}\left\{
+\mathrm{span}\left(
 e^{\sqrt{-d}\Theta},e^{-\sqrt{-d}\Theta}
-\right\}.
+\right).
 $$
 
 This is the unique integral theta-twist correction within the stated cyclic
@@ -72,8 +72,8 @@ the corresponding $\alpha-3\beta$ solution.
 The normalized characteristic class
 
 $$
-\kappa(E)=\operatorname{ch}(E)
-\exp\!\left(-c_1(E)/\operatorname{rank}(E)\right)
+\kappa(E)=\mathrm{ch}(E)
+\exp\!\left(-c_1(E)/\mathrm{rank}(E)\right)
 $$
 
 is unchanged by the repair.
