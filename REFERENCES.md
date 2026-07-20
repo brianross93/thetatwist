@@ -9,5 +9,5 @@
    Equation (8.2.3).
    <https://arxiv.org/abs/2502.03415>
 
-The repository contains no copied paper PDFs. Equations are independently
-expanded from the displayed constructions using exact rational arithmetic.
+The repository does not contain copies of the papers. The calculation uses
+the constructions in the papers and exact rational arithmetic.

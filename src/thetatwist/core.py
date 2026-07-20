@@ -1,4 +1,4 @@
-"""Dependency-free exact audit of the Section 12 theta twist."""
+"""Exact calculation of the Section 12 theta twist."""
 
 from __future__ import annotations
 
@@ -168,7 +168,7 @@ def unique_repair(d: int = 3) -> dict[str, object]:
 
 
 def natural_repair_sweep(d: int = 3) -> dict[str, object]:
-    """Record a ledger for the explicitly listed transforms."""
+    """Calculate the results for the specified transformations."""
 
     printed = printed_character(d)
     candidates = (
@@ -184,7 +184,7 @@ def natural_repair_sweep(d: int = 3) -> dict[str, object]:
             "relabeling, component count, and point-normalization count"
         ),
         "integral_theta_twist_reduction": (
-            "degree two leaves k=2,-4; only k=2 passes degrees three and four"
+            "degree two gives k=2 and k=-4. Only k=2 agrees in degrees three and four"
         ),
         "candidates": [
             {
@@ -200,21 +200,21 @@ def natural_repair_sweep(d: int = 3) -> dict[str, object]:
             "translation": "identity on rational cohomology",
             "Pic0_tensor": "Chern character one",
             "Todd_Mukai": "td(X)=1 for an abelian variety",
-            "differential_sign": "chain-isomorphic presentation; same K-class",
+            "differential_sign": "a chain isomorphism gives the same K-class",
         },
         "cone_reversal": "negates rank and therefore cannot give the rank-one target",
         "point_normalization": "changes degree four only",
         "parameter_relabel_no_go": (
-            "degrees two and three have no admissible simultaneous d-relabel solution"
+            "degrees two and three have no permitted common d-relabel solution"
         ),
         "multiplication_pullback_no_go": (
-            "after c1 normalization, degree two would require "
-            "(d+9)m^4=d+1, impossible for integer m and d>=3"
+            "after c1 normalization, degree two requires "
+            "(d+9)m^4=d+1. This equation has no integer solution when d>=3"
         ),
         "exact_alpha_plus_beta_autoequivalence_no_go": {
             "printed_euler": self_euler(printed),
             "target_euler": self_euler(secant_character(d, 1)),
-            "reason": "derived autoequivalences preserve the Euler pairing",
+            "reason": "derived autoequivalences keep the Euler pairing unchanged",
         },
     }
 
@@ -317,8 +317,9 @@ def certificate(d: int = 3) -> dict[str, object]:
             normalized_character(printed) == normalized_character(corrected)
         ),
         "claim_boundary": (
-            "Chern-character and Hodge-side certificate only; no semiregularity, "
-            "Atiyah/evaluation-map, group-action, or Hodge-conjecture claim."
+            "This result applies only to the Chern character and Hodge contraction. "
+            "It makes no claim about semiregularity, the Atiyah map, a group action, "
+            "or the Hodge conjecture."
         ),
     }
 

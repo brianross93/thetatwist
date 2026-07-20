@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "thetatwist"
 version = "0.1.0"
-description = "Exact repair-space audit for a genus-four secant construction"
+description = "Exact theta-twist calculation for a genus-four secant construction"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{name = "Brian Ross"}]
