@@ -1,0 +1,6 @@
+# These files are hash-bound computational inputs and certificates. Preserve
+# their bytes on Windows and macOS. Treat CRLF CSV and NPZ payloads as binary
+# in diffs; keep JSON certificates readable.
+results/section12_instantiation/**/*.csv -text -diff
+results/section12_instantiation/**/*.npz -text -diff
+results/section12_instantiation/**/*.json -text

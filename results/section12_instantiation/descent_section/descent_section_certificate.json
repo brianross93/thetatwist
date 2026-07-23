@@ -1,0 +1,342 @@
+{
+  "base_field": "F_31",
+  "checks": {
+    "all_checks_passed": true,
+    "curve_cardinality": 36,
+    "kernel_operator_commutator_checks": 6,
+    "translation_group_law_checks": 81,
+    "translation_point_map_checks": 324
+  },
+  "descent_identity": "pi^* O_B(Theta_B) = O_{E^4}(3 Theta_product)",
+  "eigenline": {
+    "common_eigenspace_dimension": 1,
+    "eigenvalues": [
+      11,
+      17,
+      11,
+      8
+    ],
+    "generator_cube_scalars": [
+      29,
+      15,
+      29,
+      16
+    ],
+    "nonzero_coefficient_count": 77,
+    "normalized_coefficients_mod_31": [
+      1,
+      30,
+      11,
+      30,
+      15,
+      6,
+      11,
+      6,
+      11,
+      9,
+      12,
+      16,
+      6,
+      8,
+      21,
+      9,
+      12,
+      16,
+      12,
+      30,
+      28,
+      26,
+      12,
+      0,
+      1,
+      9,
+      1,
+      8,
+      26,
+      8,
+      21,
+      14,
+      21,
+      28,
+      29,
+      28,
+      12,
+      8,
+      12,
+      8,
+      26,
+      8,
+      12,
+      8,
+      12,
+      28,
+      29,
+      28,
+      21,
+      14,
+      21,
+      11,
+      28,
+      11,
+      12,
+      26,
+      1,
+      30,
+      12,
+      9,
+      28,
+      0,
+      1,
+      16,
+      12,
+      24,
+      21,
+      8,
+      16,
+      16,
+      12,
+      24,
+      22,
+      23,
+      11,
+      23,
+      13,
+      0,
+      11,
+      0,
+      17
+    ],
+    "successive_eigenspace_dimensions": [
+      27,
+      9,
+      3,
+      1
+    ]
+  },
+  "kernel_rows": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  ],
+  "plane_cubic_preservation_scalars": {
+    "0,0": 1,
+    "0,1": 8,
+    "0,2": 8,
+    "1,0": 23,
+    "1,1": 8,
+    "1,2": 8,
+    "2,0": 23,
+    "2,1": 8,
+    "2,2": 8
+  },
+  "provenance": {
+    "quotient_certificate": "results/section12_instantiation/quotient_theta/quotient_theta_certificate.json",
+    "quotient_certificate_sha256": "0286618543e50d384f09b2f26d539907907fcf082da84f3f20f6e2936b76f7a1"
+  },
+  "schema": "section12-descent-section-v1",
+  "scope": "This certificate constructs the pullback of one theta-divisor section on the certified quotient. It does not claim the six-divisor node census or the Atiyah evaluations.",
+  "source_curve": "y^2 = x^3 + 1",
+  "source_line_bundle": "O_{E^4}(3 Theta_product)",
+  "status": "certified",
+  "tensor_basis": {
+    "dimension": 81,
+    "factor_basis": [
+      "1",
+      "x",
+      "y"
+    ],
+    "ordering": "lexicographic with final factor fastest"
+  },
+  "translation_matrices": {
+    "0,0": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "0,1": [
+      [
+        1,
+        20,
+        14
+      ],
+      [
+        28,
+        0,
+        11
+      ],
+      [
+        11,
+        28,
+        30
+      ]
+    ],
+    "0,2": [
+      [
+        1,
+        20,
+        17
+      ],
+      [
+        28,
+        0,
+        20
+      ],
+      [
+        20,
+        3,
+        30
+      ]
+    ],
+    "1,0": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        29,
+        0
+      ],
+      [
+        28,
+        0,
+        1
+      ]
+    ],
+    "1,1": [
+      [
+        1,
+        4,
+        14
+      ],
+      [
+        16,
+        0,
+        24
+      ],
+      [
+        11,
+        18,
+        30
+      ]
+    ],
+    "1,2": [
+      [
+        1,
+        7,
+        17
+      ],
+      [
+        18,
+        0,
+        4
+      ],
+      [
+        20,
+        15,
+        30
+      ]
+    ],
+    "2,0": [
+      [
+        1,
+        0,
+        30
+      ],
+      [
+        0,
+        29,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ]
+    ],
+    "2,1": [
+      [
+        1,
+        7,
+        14
+      ],
+      [
+        18,
+        0,
+        27
+      ],
+      [
+        11,
+        16,
+        30
+      ]
+    ],
+    "2,2": [
+      [
+        1,
+        4,
+        17
+      ],
+      [
+        16,
+        0,
+        7
+      ],
+      [
+        20,
+        13,
+        30
+      ]
+    ]
+  }
+}

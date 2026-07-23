@@ -1,0 +1,33 @@
+{
+  "files": {
+    "generator_artifact_status.csv": {
+      "bytes": 1515,
+      "sha256": "e14bc3d4b7e508b592d5e7bcdbf28adba779c940f834782eb05466d6d078e578"
+    },
+    "generator_support_bindings.csv": {
+      "bytes": 18965,
+      "sha256": "e93b615e0ad62ec62b5e3f1c34a313f4b6fb5f1b2f5f419bd9a9b9f964c768af"
+    },
+    "k_coherence_adapter_certificate.json": {
+      "bytes": 9078,
+      "sha256": "26cead832ccf9a1f74de43bb9b9609083787535aec0976a6aa40d564b8d8142a"
+    },
+    "z2_k_generator_commutation_squares.csv": {
+      "bytes": 67983,
+      "sha256": "db347b578fa5a42a31a5d7a4a9d95ed4ff860c8e9f2af9ea2f479ee1473e4b41"
+    },
+    "z2_k_order_three_cycles.csv": {
+      "bytes": 15057,
+      "sha256": "29c3bc9f669aa5c650f9d6d39e57cb5ebc0d132d79b50d7ecd4b558ccea90e10"
+    },
+    "z2_k_typed_edges.csv": {
+      "bytes": 59430,
+      "sha256": "2ccfeb901ebba492174f0804cb436a8354c894af4a4f4b3bd14b4b955c3683d6"
+    }
+  },
+  "producer": {
+    "path": "experiments/section12_instantiation/cm_bridge_hs_rank2_k_coherence_adapter.py",
+    "sha256": "f1005c69989ea316d046fb794f3eae81de37217990c570b12ce5613a65090abe"
+  },
+  "schema": "section12-HS-rank2-K-coherence-adapter-manifest-v1"
+}

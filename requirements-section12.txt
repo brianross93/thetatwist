@@ -1,0 +1,3 @@
+# Versions observed in the compatible Section 12 tree-contraction environment.
+numpy==2.4.6
+scipy==1.17.1

@@ -146,6 +146,26 @@ The experimental continuation is in
 Section 12 object. It gives the exact theta-incidence complex and reduces the
 open Atiyah calculation from 16 kernel directions to six mixed directions.
 
+## Current computation boundary
+
+The finite-overlap calculation is complete for the four standard generators
+of $K=(\mathbb Z/3)^4$. The four artifacts contain 133 support factors. They
+pass 1,729 factorized top-degree identities. One orientation-coboundary law
+controls all four generators.
+
+The adapter binds these results to all 324 typed edges, 108 order-three
+cycles, and 486 commutation squares. It has not rebased the rectangular maps
+into common edge bases. It has not multiplied the cycle or square maps. Thus,
+the common-basis calculation and the global cross-RHom/Yoneda operator remain
+open.
+
+[SECTION12_PC_HANDOFF.md](experiments/section12_instantiation/SECTION12_PC_HANDOFF.md)
+gives the exact PC environment, source closure, frozen inputs, and commands.
+[section12_inputs.manifest](results/section12_inputs.manifest) verifies the
+inputs included in this repository. The four large generator bundles stay
+outside Git; [section12_all_generators.manifest](results/section12_all_generators.manifest)
+records their SHA-256 hashes and byte counts.
+
 ## Citation and license
 
 [CITATION.cff](CITATION.cff) contains the citation metadata. The repository

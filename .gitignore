@@ -2,6 +2,14 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+.venv-section12/
 dist/
 build/
 *.egg-info/
+
+# The four finite-overlap map bundles are 0.73--0.98 GB each. Keep their
+# SHA-256 manifest in Git and transfer the payload separately.
+results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction/
+results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction_e1/
+results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction_e2/
+results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction_e3/

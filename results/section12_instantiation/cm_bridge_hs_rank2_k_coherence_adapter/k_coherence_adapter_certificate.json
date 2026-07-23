@@ -1,0 +1,293 @@
+{
+  "availability_policy": {
+    "legacy_source_hash_mismatch_blocks_internal_artifact_loading": false,
+    "missing_generator_artifacts_block_registry_emission": false,
+    "optional_preflight_is_a_prerequisite": false,
+    "rerun_discovers_new_completed_manifests": true
+  },
+  "counts": {
+    "K_vertices": 81,
+    "coherence_chain_homotopies_emitted": 0,
+    "cycles_with_generator_templates_available": 108,
+    "distinct_order_three_cycles": 108,
+    "generator_artifacts_loaded": 4,
+    "generator_commutation_squares": 486,
+    "generator_commutation_squares_closed": 0,
+    "generators_with_support_ids_bound": 4,
+    "numeric_edge_chain_maps_emitted": 0,
+    "order_three_cycles_closed": 0,
+    "squares_with_generator_templates_available": 486,
+    "standard_generators": 4,
+    "strict_coherence_equalities_computed": 0,
+    "support_identity_bindings": 133,
+    "typed_edges": 324,
+    "typed_edges_common_basis_rebased": 0,
+    "typed_edges_ready_for_common_basis_rebase": 324
+  },
+  "exact_registry_checks": {
+    "committed_Cayley_job_comparison": {
+      "checked": true,
+      "matches": true,
+      "path": "/Users/brianross/Documents/emfields/results/section12_instantiation/cm_bridge_hs_rank2_k_chain_comparison/z2_k_cayley_chain_comparison_jobs.csv",
+      "reason": null
+    },
+    "commutation_square_census_is_486": true,
+    "generator_template_joins_use_exponent_tuples": true,
+    "order_three_cycle_census_is_108": true,
+    "support_joins_use_explicit_tuple_pairs": true,
+    "typed_edge_census_is_324": true,
+    "vertex_census_is_81": true
+  },
+  "field": "F_31",
+  "files": {
+    "generator_artifact_status": "generator_artifact_status.csv",
+    "generator_commutation_squares": "z2_k_generator_commutation_squares.csv",
+    "generator_support_bindings": "generator_support_bindings.csv",
+    "order_three_cycles": "z2_k_order_three_cycles.csv",
+    "typed_edges": "z2_k_typed_edges.csv"
+  },
+  "generator_artifacts": {
+    "e0": {
+      "artifact_loaded": true,
+      "artifact_status": "LOADED_SUPPORT_IDS_BOUND",
+      "common_basis_rebased": false,
+      "generator": "e0",
+      "generator_exponents": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "internal_files_verified": true,
+      "maps_sha256": "ee880251c1cffe11292f713c17fee2d001817888c08b455dfeb9a4ec2f186499",
+      "matrix_shapes": {
+        "J1": [
+          491,
+          687
+        ],
+        "J2": [
+          1966,
+          2750
+        ],
+        "J3_G3": [
+          3920,
+          5488
+        ],
+        "L0": [
+          492,
+          688
+        ],
+        "L1": [
+          1966,
+          2750
+        ],
+        "a": [
+          1,
+          687
+        ]
+      },
+      "normalization_arrays": [],
+      "numeric_edge_matrix_emitted": false,
+      "output_directory": "/Users/brianross/Documents/emfields/results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction",
+      "preflight_available": false,
+      "preflight_is_prerequisite": false,
+      "ready_for_common_basis_rebase": true,
+      "source_binding": "LEGACY_CURRENT_SOURCE_MISMATCH",
+      "support_binding_count": 35,
+      "support_bindings_sha256": "b7ea8a47735070e051ae13dc06dd78501013e2ce4045c1ae90a66ac227ac926b",
+      "support_count_in_artifact": 35,
+      "support_ids_bound": true,
+      "validation_error": null,
+      "verified_file_count": 4
+    },
+    "e1": {
+      "artifact_loaded": true,
+      "artifact_status": "LOADED_SUPPORT_IDS_BOUND",
+      "common_basis_rebased": false,
+      "generator": "e1",
+      "generator_exponents": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "internal_files_verified": true,
+      "maps_sha256": "e5d9e0ade31e01b3a7b6b5c44831e28bf1647be3895d9993a3425253ccf40bae",
+      "matrix_shapes": {
+        "J1": [
+          435,
+          687
+        ],
+        "J2": [
+          1742,
+          2750
+        ],
+        "J3_G3": [
+          3472,
+          5488
+        ],
+        "L0": [
+          436,
+          688
+        ],
+        "L1": [
+          1742,
+          2750
+        ],
+        "a": [
+          1,
+          687
+        ]
+      },
+      "normalization_arrays": [
+        "target_lambda_normalization_pairs",
+        "residue_transport_pairs",
+        "raw_counit_weight_pairs",
+        "orientation_coboundary_pairs"
+      ],
+      "numeric_edge_matrix_emitted": false,
+      "output_directory": "/Users/brianross/Documents/emfields/results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction_e1",
+      "preflight_available": true,
+      "preflight_is_prerequisite": false,
+      "ready_for_common_basis_rebase": true,
+      "source_binding": "LEGACY_CURRENT_SOURCE_MISMATCH",
+      "support_binding_count": 31,
+      "support_bindings_sha256": "f6db9f775c5b258e2c4a9c624d5b8b292a73dbba30ee0f995096b83b66891e18",
+      "support_count_in_artifact": 31,
+      "support_ids_bound": true,
+      "validation_error": null,
+      "verified_file_count": 4
+    },
+    "e2": {
+      "artifact_loaded": true,
+      "artifact_status": "LOADED_SUPPORT_IDS_BOUND",
+      "common_basis_rebased": false,
+      "generator": "e2",
+      "generator_exponents": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "internal_files_verified": true,
+      "maps_sha256": "69ef4ad87de73af9e0dd4943e221f4f946158f0d8c1acac36cc9deec4cf6acd0",
+      "matrix_shapes": {
+        "J1": [
+          491,
+          687
+        ],
+        "J2": [
+          1966,
+          2750
+        ],
+        "J3_G3": [
+          3920,
+          5488
+        ],
+        "L0": [
+          492,
+          688
+        ],
+        "L1": [
+          1966,
+          2750
+        ],
+        "a": [
+          1,
+          687
+        ]
+      },
+      "normalization_arrays": [
+        "target_lambda_normalization_pairs",
+        "residue_transport_pairs",
+        "raw_counit_weight_pairs",
+        "orientation_coboundary_pairs"
+      ],
+      "numeric_edge_matrix_emitted": false,
+      "output_directory": "/Users/brianross/Documents/emfields/results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction_e2",
+      "preflight_available": true,
+      "preflight_is_prerequisite": false,
+      "ready_for_common_basis_rebase": true,
+      "source_binding": "CURRENT_SOURCE_BOUND",
+      "support_binding_count": 35,
+      "support_bindings_sha256": "3cd8a385a41f7fb8802d9ae5519c1f7fd5f56f5a135760d3eb736a0e99668cad",
+      "support_count_in_artifact": 35,
+      "support_ids_bound": true,
+      "validation_error": null,
+      "verified_file_count": 4
+    },
+    "e3": {
+      "artifact_loaded": true,
+      "artifact_status": "LOADED_SUPPORT_IDS_BOUND",
+      "common_basis_rebased": false,
+      "generator": "e3",
+      "generator_exponents": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "internal_files_verified": true,
+      "maps_sha256": "ce667bed8f3804706105d75aaa44cebfe809721787028fd9e775cc328243daf5",
+      "matrix_shapes": {
+        "J1": [
+          449,
+          687
+        ],
+        "J2": [
+          1798,
+          2750
+        ],
+        "J3_G3": [
+          3584,
+          5488
+        ],
+        "L0": [
+          450,
+          688
+        ],
+        "L1": [
+          1798,
+          2750
+        ],
+        "a": [
+          1,
+          687
+        ]
+      },
+      "normalization_arrays": [
+        "target_lambda_normalization_pairs",
+        "residue_transport_pairs",
+        "raw_counit_weight_pairs",
+        "orientation_coboundary_pairs"
+      ],
+      "numeric_edge_matrix_emitted": false,
+      "output_directory": "/Users/brianross/Documents/emfields/results/section12_instantiation/cm_bridge_hs_rank2_k_generator_tree_contraction_e3",
+      "preflight_available": true,
+      "preflight_is_prerequisite": false,
+      "ready_for_common_basis_rebase": true,
+      "source_binding": "CURRENT_SOURCE_BOUND",
+      "support_binding_count": 32,
+      "support_bindings_sha256": "8811065f860d540884283b3fecf5de8bf39cf696480bf15708aada275b512658",
+      "support_count_in_artifact": 32,
+      "support_ids_bound": true,
+      "validation_error": null,
+      "verified_file_count": 4
+    }
+  },
+  "next_numeric_scope": "construct common source/target bases for the typed edges, rebase the rectangular generator templates, and only then compute the 108 cycle and 486 square products",
+  "numeric_claim_boundary": {
+    "K_coherence_up_to_chain_homotopy_asserted": false,
+    "cycle_matrix_products_computed": false,
+    "global_Phi_or_Yoneda_attempted": false,
+    "square_matrix_products_computed": false,
+    "strict_K_coherence_asserted": false,
+    "support_local_maps_asserted_invertible": false,
+    "support_local_rectangular_CSR_records_are_loadable_on_demand": true,
+    "typed_edge_common_bases_constructed": false,
+    "typed_edge_matrices_rebased": false
+  },
+  "schema": "section12-HS-rank2-K-coherence-adapter-v1",
+  "scope": "verified generator artifacts, tuple-bound support identities, and deterministic K edge/cycle/square registries only",
+  "status": "ALL_GENERATOR_TEMPLATES_LOADED;COMMON_BASIS_NUMERIC_COMPOSITION_OPEN"
+}

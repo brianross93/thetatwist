@@ -1,0 +1,38 @@
+{
+  "binary_artifact": {
+    "path": "Z_2_C0000.npz",
+    "sha256": "22f6537b5d06a352e88d0b1d6b55402f022928b8234cdfb1b41a3a9bcb4f9503"
+  },
+  "chart": "C0000",
+  "claim_boundary": {
+    "not_proved": "the translated-section ideal J has no additional base locus; J=I_W still needs saturation/length or explicit reverse ideal membership",
+    "proved": "the border relations present the exact curvilinear ideal I_W on this chart; the 162 translated normalized sections lie in I_W"
+  },
+  "exact_checks": {
+    "Hermite_matrix_invertible": true,
+    "all_162_translated_normalized_sections_vanish_to_first_order": true,
+    "four_curve_and_two_surface_equations_vanish_to_first_order": true,
+    "multiplication_matrices_commute": true,
+    "order_ideal_is_cyclic_from_one": true,
+    "point_idempotents_sum_to_one_and_dual_numbers_are_interpolated": true,
+    "standard_monomials_form_order_ideal": true
+  },
+  "field": "F_31",
+  "schema": "section12-IW-Hermite-border-basis-v1",
+  "summary": {
+    "ambient_equation_jet_rank": 0,
+    "border_monomials": 313,
+    "commuting_variable_pairs_checked": 28,
+    "cyclic_basis_vectors_checked": 112,
+    "highest_selected_degree": 3,
+    "monomials_tested": 116,
+    "point_idempotents": 56,
+    "point_nilpotents": 56,
+    "quotient_length": 112,
+    "selected_standard_monomials": 112,
+    "support_points": 56,
+    "translated_generator_hermite_rank": 0,
+    "translated_normalized_generators": 162
+  },
+  "surface": "Z_2"
+}
